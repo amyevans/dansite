@@ -14,6 +14,10 @@ body, html {
 	height: 100%;
 }
 
+.is-loading {
+	background-color: red;
+}
+
 div#calltoaction {
 	position: absolute;
 	bottom: 20px;
