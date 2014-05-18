@@ -20,20 +20,5 @@ $(document).ready(function() {
 			}
 		});
 	});	
-
-
-/*
-	$(".education").on('click', 'a', function() {
-		$('.research').last().hide();
-		$('.presentations').last().hide();
-		$(this).closest('.container').find('.education').last().fadeIn();
-	});
-	$(".presentations").on('click', 'a', function() {
-		// event.preventDefault();
-		$('.research').last().hide();
-		$('.education').last().hide();
-		$(this).closest('.container').find('.presentations').last().fadeIn();
-	});
-*/
 });
 
