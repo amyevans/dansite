@@ -4,18 +4,12 @@ $(document).ready(function() {
 			$('#details').html(response).fadeIn();
 	});
 	$(".education").on('click', 'a', function() {
-		$.ajax('education.html', {
-			success: function(response) {
-				$('#details').html(response).fadeIn();
-			}
-		});
+		$.get('education.html', function(response) {
+			$('#details').html(response).fadeIn();
 	});
 	$(".presentations").on('click', 'a', function() {
-		$.ajax('presentations.html', {
-			success: function(response) {
-				$('#details').html(response).fadeIn();
-			}
-		});
-	});	
+		$.get('presentations.html', function(response) {
+			$('#details').html(response).fadeIn();
+	});
 });
 
