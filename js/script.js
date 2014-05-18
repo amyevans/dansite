@@ -1,10 +1,7 @@
 $(document).ready(function() {
 	$(".research").on('click', 'a', function() {
-		$.ajax('research.html', {
-			success: function(response) {
-				$('#details').html(response).fadeIn();
-			}
-		});
+		$.get('research.html', function(response) {
+			$('#details').html(response).fadeIn();
 	});
 	$(".education").on('click', 'a', function() {
 		$.ajax('education.html', {
