@@ -1,0 +1,30 @@
+.extended-content {
+	display: none;
+}
+
+.jumbotron {
+	background-image: url('../images/chemistry.png');
+	background-size: cover;
+	min-height: 100%;
+	padding: 0px;
+	color: #000;
+}
+
+body, html {
+	height: 100%;
+}
+
+div#calltoaction {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	background-color:#ffffff;
+	padding: 20px 50px;
+	width: 100%;
+ 	opacity:0.6;
+  	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+/* I don't want the content to be transparent too!! Fix! */
+
+/* Also, look into why the three columns go away at smaller widths 
+- min-width property maybe - see if you want to change that */
