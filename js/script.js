@@ -7,6 +7,23 @@ $(document).ready(function() {
 		});
 	});
 	$(".education").on('click', 'a', function() {
+		$.ajax('education.html', {
+			success: function(response) {
+				$('#details').html(response).fadeIn();
+			}
+		});
+	});
+	$(".presentations").on('click', 'a', function() {
+		$.ajax('presentations.html', {
+			success: function(response) {
+				$('#details').html(response).fadeIn();
+			}
+		});
+	});	
+
+
+/*
+	$(".education").on('click', 'a', function() {
 		$('.research').last().hide();
 		$('.presentations').last().hide();
 		$(this).closest('.container').find('.education').last().fadeIn();
@@ -17,5 +34,6 @@ $(document).ready(function() {
 		$('.education').last().hide();
 		$(this).closest('.container').find('.presentations').last().fadeIn();
 	});
+*/
 });
 
